@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+
+<style>
+    *{
+        font-style: arial, sans-serif;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+    }
+    header {
+        background-color: #E7D8C9;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+        border: 2px solid black;
+        border-bottom: none;
+    }
+    nav{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: #b9ac9e;
+        border-width: 2px;
+        border-color: black;
+        border-bottom-style: solid;
+        border-left-style: solid;
+        border-right-style: solid;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 20px;
+        
+    }
+    section, article, aside {
+        padding: 20px;
+        margin-left: 50px ;
+        margin-right: 50px;
+
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    nav li{
+        display: inline;
+        margin-right: 10px;
+        text-align: center;
+        padding: 50px;
+    }
+    nav a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    
+    aside ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    aside li{
+        display: inline;
+        margin 30px;
+        
+        padding: 10px;
+    }
+    aside a{
+        text-decoration: none;
+        text-align: center;
+    }
+    .flex-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        box-sizing: border-box;
+       background-color: #b9ac9e;
+       border-radius: 10px;
+        }
+    .flex-item {
+        background-color: #EEE4E1;
+        padding: 20px;
+        margin-left: 5px;
+        margin-top: 20px;
+        margin-right: 5px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        border: 2px solid black;
+        display: flex;
+    }
+    ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        justify-content: center;
+    }
+img{
+        width: 60px;
+        height: 60px;
+        
+    }
+    .flex{
+        flex: 2;
+        min-width: 200px;       
+    }
+    footer{
+        text-align: center;
+        margin-top: 100px;
+    }
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+    .flex-container {
+        flex-direction: row;
+    }
+    .flex-item {
+        width: auto;
+    }
+    
+}
+</style>
+<body>
+    <header class="header">
+        <h1 >Social Media Websites</h1>
+        <p>Welcome to our sample website</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#">About</a></li></li>
+            <li><a href="#">Service</a></li></li>
+            <li><a href="#">Conctact</a></li></li>
+        </ul>
+    </nav>    
+    
+
+    <div class="flex-container">
+<div class="flex-item">
+    <section >
+        <h2>About Us</h2>
+        <p>This is about the section of our website.</p>
+    </section>
+</div>
+    <div class="flex-item">
+    <article>
+        <h2>Latest News</h2>
+        <p>This is the late news article.</p>
+    </article>
+    </div>
+
+    <div class="flex-item">
+    <aside>
+        <h2>Social Media Links</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/"><img src="https://1.bp.blogspot.com/-S8HTBQqmfcs/XN0ACIRD9PI/AAAAAAAAAlo/FLhccuLdMfIFLhocRjWqsr9cVGdTN_8sgCPcBGAYYCw/s1600/f_logo_RGB-Blue_1024.png"></a></li>
+            <li><a href="https://www.instagram.com/?hl=en"><img src="https://www.kindpng.com/picc/m/91-916750_ig-logo-instagram-hd-png-download.png"></a></li>
+            <li><a href="https://www.tiktok.com/"><img src="https://logospng.org/download/tiktok/logo-tiktok-icone-1536.png" ></a></li>
+        </ul>
+    </aside>
+</div>
+</div>
+
+    
+    <footer>
+        <p>&copy; 2025 Sample Website. All rights reserved.</p>
+        </footer>
+</body>
+</html>
